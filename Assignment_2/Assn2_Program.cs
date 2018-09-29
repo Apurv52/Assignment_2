@@ -7,6 +7,7 @@ namespace Assignment_2
     static void Main(string[] args)
     {
       //Sidra added this here.
+      Console.WriteLine("hello");
 
       //Rustem added this here!
 
