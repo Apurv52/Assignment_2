@@ -228,9 +228,24 @@ namespace Assignment_2
     //return type  : NA
     public void SortByValue()
     {
-      // write your implementation here
+            // write your implementation here
+            /*List<String> StockList = new List<string> { };
 
-    }
+            foreach (decimal Holdings in StockList)
+            {
+                Console.WriteLine(StockList);
+            }
+
+            StockList.Sort();
+
+            foreach (decimal Holdings in StockList)
+            {
+                Console.WriteLine(StockList);
+            }
+
+            StockList.Reverse();*/
+
+        }
 
     //param        : NA
     //summary      : Sort the list alphabatically
