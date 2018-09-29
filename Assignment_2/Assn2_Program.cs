@@ -7,6 +7,9 @@ namespace Assignment_2
     static void Main(string[] args)
     {
       //Sidra added this here.
+
+      //Rustem added this here!
+
       Stock stockOne = new Stock("GOOG", "Google", 1.2m, 6.27m);
       Stock stockTwo = new Stock("MSFT", "Microsoft", 5m, 111.2m);
       Stock stockThree = new Stock("AAPL", "Apple", 6m, 222.7m);
