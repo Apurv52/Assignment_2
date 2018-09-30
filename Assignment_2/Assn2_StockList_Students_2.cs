@@ -49,7 +49,19 @@ namespace Assignment_2
       int length = 0;
 
       // write your implementation here
-
+      StockNode current = this.head;
+      
+      if (current != null) {
+        
+        //Console.WriteLine(current.StockHolding.Name);
+        length++;
+        while (current.Next != null)
+        {
+            current = current.Next;
+            //Console.WriteLine(current.StockHolding.Name);
+            length++;
+        }
+      }
       return length;
     }
   }
