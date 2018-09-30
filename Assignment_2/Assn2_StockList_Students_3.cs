@@ -14,7 +14,12 @@ namespace Assignment_2
     {
       decimal value = 0.0m;
 
-      // write your implementation here
+      /*
+       
+       
+       
+
+       */
 
       return value;
     }
@@ -38,8 +43,28 @@ namespace Assignment_2
     //return type  : NA
     public void Print()
     {
-      // write your implementation here
+            
+            /* List<Stock> StockList = new List<Stock>();
 
+            Stocklist.Add(stockOne);
+            Stocklist.Add(stockTwo);
+            Stocklist.Add(stockThree);
+            Stocklist.Add(stockFour);
+            Stocklist.Add(stockFive);
+            Stocklist.Add(stockSix);
+            Stocklist.Add(stockSeven);
+            Stocklist.Add(stockEight);
+
+            for (int i = 0; i < StockList.Count; i++)
+
+                        {
+                          Stock s = StockList[i];
+                          Console.WriteLine("Symbol = {0}, Name = {1}, Holdings = {2}, CurrentPrice = {3}", s.Symbol, s.Name, s.Holdings, s.CurrentPrice);
+                        }
+        
+            */
+
+        }
     }
-  }
 }
+ 
