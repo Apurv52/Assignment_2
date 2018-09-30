@@ -13,8 +13,16 @@ namespace Assignment_2
     public StockList MergeList(StockList listToMerge)
     {
       StockList resultList = new StockList();
+      resultList = this;
+      StockNode startOfList = listToMerge.head;
+      
+      // traverse the list till the end
+      StockNode current = resultList.head;
+      while (current.Next != null)
+          current = current.Next;
 
-      // write your implementation here
+      // point the last node of the first list to the new node of the other list
+      current.Next = startOfList;
 
       return resultList;
     }
@@ -41,7 +49,19 @@ namespace Assignment_2
       int length = 0;
 
       // write your implementation here
-
+      StockNode current = this.head;
+      
+      if (current != null) {
+        
+        //Console.WriteLine(current.StockHolding.Name);
+        length++;
+        while (current.Next != null)
+        {
+            current = current.Next;
+            //Console.WriteLine(current.StockHolding.Name);
+            length++;
+        }
+      }
       return length;
     }
   }
