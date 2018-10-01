@@ -14,6 +14,15 @@ namespace Assignment_2
     {
       decimal value = 0.0m;
 
+            StockNode current;
+            current = this.head;
+            while (current !=null)
+            {
+                value = value + (current.StockHolding.Holdings * current.StockHolding.CurrentPrice);
+
+                current = current.Next;
+            }
+
       return value;
     }
 
