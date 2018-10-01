@@ -37,11 +37,12 @@ namespace Assignment_2
 
             // write your implementation here
 
-            StockNode current;
+            //defining current node as the head
+            StockNode current; 
             current = this.head;
-            mostShareStock = current.StockHolding;
+            mostShareStock = current.StockHolding; 
 
-            
+            //traversing the list
                 while (current !=null)
                 {
 
@@ -66,16 +67,15 @@ namespace Assignment_2
       int length = 0;
 
       // write your implementation here
+      //defining current node as the head
       StockNode current = this.head;
       
+       //traversing the list
       if (current != null) {
-        
-        //Console.WriteLine(current.StockHolding.Name);
         length++;
         while (current.Next != null)
         {
             current = current.Next;
-            //Console.WriteLine(current.StockHolding.Name);
             length++;
         }
       }
