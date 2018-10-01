@@ -262,8 +262,30 @@ namespace Assignment_2
         //return type  : NA
         public void SortByName()
         {
+            //currentStockName.CompareTo(nameOfStockToAdd) < 0
             // write your implementation here
+            StockNode p1 = head;
+            StockNode p2 = p1.Next;
 
+            Boolean isSorted = false;
+            while (!isSorted)
+            {
+                isSorted = true;
+                while (p2 != null)
+                {
+                    if ((p1.StockHolding).Name.CompareTo((p2.StockHolding).Name) > 0)
+                    {
+                        isSorted = false;
+                        p1 = Swap(p1.StockHolding);
+                    }
+
+                    p1 = p2;
+                    p2 = p2.Next;
+                }
+
+                p1 = head;
+                p2 = p1.Next;
+            }
         }
     }
 }
