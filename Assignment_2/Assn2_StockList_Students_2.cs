@@ -35,7 +35,24 @@ namespace Assignment_2
     {
       Stock mostShareStock = null;
 
-      // write your implementation here
+            // write your implementation here
+
+            StockNode current;
+            current = this.head;
+            mostShareStock = current.StockHolding;
+
+            
+                while (current !=null)
+                {
+
+                    if (current.StockHolding.Holdings > mostShareStock.Holdings)
+                    {
+                    mostShareStock = current.StockHolding;
+                    }
+
+                    current = current.Next;
+
+                }       
 
       return mostShareStock;
     }
