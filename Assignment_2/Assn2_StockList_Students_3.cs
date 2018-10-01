@@ -43,26 +43,22 @@ namespace Assignment_2
     //return type  : NA
     public void Print()
     {
-            
-            /* List<Stock> StockList = new List<Stock>();
 
-            Stocklist.Add(stockOne);
-            Stocklist.Add(stockTwo);
-            Stocklist.Add(stockThree);
-            Stocklist.Add(stockFour);
-            Stocklist.Add(stockFive);
-            Stocklist.Add(stockSix);
-            Stocklist.Add(stockSeven);
-            Stocklist.Add(stockEight);
+            StockNode current = head;
 
-            for (int i = 0; i < StockList.Count; i++)
+            Console.Write("head --> ");
 
-                        {
-                          Stock s = StockList[i];
-                          Console.WriteLine("Symbol = {0}, Name = {1}, Holdings = {2}, CurrentPrice = {3}", s.Symbol, s.Name, s.Holdings, s.CurrentPrice);
-                        }
-        
-            */
+            while (current != null)
+            {
+
+                Console.Write(" | " + current.StockHolding.Name + ", " + current.StockHolding.Symbol + ", " + current.StockHolding.Holdings + "|");
+                Console.Write(" --> ");
+                current = current.Next;
+            }
+
+            Console.Write("null ");
+
+            Console.WriteLine();
 
         }
     }
