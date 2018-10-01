@@ -14,13 +14,6 @@ namespace Assignment_2
     {
       decimal value = 0.0m;
 
-      /*
-       
-       
-       
-
-       */
-
       return value;
     }
 
