@@ -57,6 +57,8 @@ namespace Assignment_2
       Console.WriteLine("**************************Client-1,Client -2 Merged Portfolio*****************************************");
       StockList mergedPortfolio = client1.StockList.MergeList(client2.StockList);
       mergedPortfolio.Print();
+      //Console.WriteLine(mergedPortfolio.Length()); 
+
 
       Console.ReadLine();
     }
