@@ -33,9 +33,39 @@ namespace Assignment_2
     public int Similarity(StockList listToCompare)
     {
       int similarityIndex = 0;
-            
 
-      return similarityIndex;
+            StockNode current;
+            current = this.head;
+
+            StockNode secondList;
+            secondList = listToCompare.head;
+
+
+            while (current != null)
+            {
+
+                while (secondList != null)
+                {
+                    if (current.StockHolding.Symbol == secondList.StockHolding.Symbol)
+                    {
+                        similarityIndex++;
+                        //break;
+
+                    }
+                    secondList = secondList.Next;
+
+                }
+
+                secondList = listToCompare.head;
+
+
+                current = current.Next;
+            }
+
+
+
+            return similarityIndex;
+
         }
 
     //param        : NA
